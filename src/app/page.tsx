@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { AppContainer } from "@/components/app-container";
 
 export const metadata: Metadata = {
-  title: "DeepSite - Create AI-Generated Websites",
+  title: "AnySite - VibeCoding Platform",
   description: "Create beautiful websites using AI with DeepSite",
 };
 
