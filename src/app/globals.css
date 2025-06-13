@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 10% 15.3%;
+    --foreground: 0 0% 98%;
+    --card: 40 10% 15.3%;
+    --card-foreground: 0 0% 98%;
+    --popover: 40 10% 15.3%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 142.1 68.8% 49.4%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 5.9% 31.4%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 40 5.9% 31.4%;
+    --muted-foreground: 40 5% 64.9%;
+    --accent: 142.1 68.8% 49.4%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 5.9% 31.4%;
+    --input: 40 5.9% 31.4%;
+    --ring: 142.1 68.8% 49.4%;
+    --radius: 0.5rem;
+  }
+
+  .light {
+    --background: 0 0% 94.1%;
+    --foreground: 40 10% 15.3%;
+    --card: 0 0% 100%;
+    --card-foreground: 40 10% 15.3%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 40 10% 15.3%;
+    --primary: 142.1 68.8% 49.4%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 4.8% 95.9%;
+    --secondary-foreground: 40 5.9% 10%;
+    --muted: 40 4.8% 95.9%;
+    --muted-foreground: 40 3.8% 46.1%;
+    --accent: 142.1 68.8% 49.4%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 5.9% 90%;
+    --input: 40 5.9% 90%;
+    --ring: 142.1 68.8% 49.4%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.code-area {
+  background-color: #1f1f1f;
+  color: #f0f0ef;
+}
+
+.code-area pre {
+  font-family: "Menlo", "Monaco", "Courier New", monospace;
+}
+
+.unfocus-border {
+  border-color: #23d57c;
+  box-shadow: 0 0 20px rgba(35, 213, 124, 0.5);
+}
